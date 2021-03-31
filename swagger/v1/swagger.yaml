@@ -1,0 +1,56 @@
+---
+openapi: 3.0.1
+info:
+  title: API V1
+  version: v1
+paths:
+  "/api/v1/basic_health_units":
+    get:
+      summary: list basic_health_units
+      responses:
+        '200':
+          description: successful
+    post:
+      summary: create basic_health_unit
+      responses:
+        '200':
+          description: successful
+  "/api/v1/basic_health_units/{id}":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: show basic_health_unit
+      responses:
+        '200':
+          description: successful
+    patch:
+      summary: update basic_health_unit
+      responses:
+        '200':
+          description: successful
+    put:
+      summary: update basic_health_unit
+      responses:
+        '200':
+          description: successful
+    delete:
+      summary: delete basic_health_unit
+      responses:
+        '200':
+          description: successful
+  "/api/v1/find_ubs":
+    get:
+      summary: find_ubs basic_health_unit
+      responses:
+        '200':
+          description: successful
+servers:
+- url: https://{defaultHost}
+  variables:
+    defaultHost:
+      default: www.example.com

@@ -1,0 +1,46 @@
+Naming/RescuedExceptionsVariableName:
+  PreferredName: exception
+
+# Metrics/LineLength:
+#   Max: 120
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Lint/UnusedMethodArgument:
+  AllowUnusedKeywordArguments: true
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+Layout/SpaceInLambdaLiteral:
+  EnforcedStyle: require_space
+
+Layout/AlignHash:
+  EnforcedHashRocketStyle: table
+  EnforcedColonStyle: table
+
+Style/SymbolArray:
+  Enabled: false
+
+Style/NumericPredicate:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+# Permite utilização de acentos nos comentários
+AsciiComments:
+  Enabled: false
+
+AllCops:
+  TargetRubyVersion: 2.4.1
+  Exclude:
+    - 'coverage/**/*'
+    - 'documentation/**/*'
+    - 'log/**/*'
+    - 'public/**/*'
+    - 'tmp/**/*'
