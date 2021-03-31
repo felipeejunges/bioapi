@@ -10,12 +10,6 @@ paths:
       responses:
         '200':
           description: successful
-    post:
-      summary: create basic_health_unit
-      parameters: []
-      responses:
-        '200':
-          description: successful
   "/api/v1/basic_health_units/{id}":
     parameters:
     - name: id
@@ -26,17 +20,6 @@ paths:
         type: string
     get:
       summary: show basic_health_unit
-      responses:
-        '200':
-          description: successful
-    patch:
-      summary: update basic_health_unit
-      responses:
-        '200':
-          description: successful
-    put:
-      summary: update basic_health_unit
-      parameters: []
       responses:
         '200':
           description: successful

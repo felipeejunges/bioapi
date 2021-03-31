@@ -40,6 +40,9 @@ docker-compose run api rspec
 - Parametro **page**, não é obrigatório, recebe os parâmetro para dizer qual página da paginação, só ira funcionar caso o per_page estiver preenchido, por padrão seu valor é 1
 - Parametro **range**, não é obrigatório, recebe o parâmetro do distancia do ponto original (query) para que seja procurado as unidades próximas, por padrão seu valor é 25.
 
+#### Swagger Documentation
+**/api-docs** documentação básica dos endpoints
+
 
 
 ### Outros
