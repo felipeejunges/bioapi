@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-
+ENV['RAILS_ENV'] ||= 'test'
 require 'rails_helper'
 
 RSpec.configure do |config|
@@ -24,10 +24,10 @@ RSpec.configure do |config|
       paths: {},
       servers: [
         {
-          url: 'https://{defaultHost}',
+          url: 'http://localhost:3000',
           variables: {
             defaultHost: {
-              default: 'www.example.com'
+              default: 'localhost:3000'
             }
           }
         }
