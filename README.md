@@ -10,7 +10,7 @@ docker-compose up
 
 Depois de iniciado, para utilização da primeira vez, é necessário realizar o bundle, e as ações do banco com os comandos abaixo:
 ```bash
-docker-compose bundle install
+docker-compose run api bundle install
 ```
 ```bash
 docker-compose run api rake db:create && docker-compose run api rake db:migrate && docker-compose run api rake db:seed
